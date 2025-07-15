@@ -122,80 +122,38 @@ public class Controller {
     }
 
     @GetMapping("/students/spring-boot")
-    public ArrayList<Students> getStudentsSpringboot(){
-        ArrayList<Students> java = new ArrayList<>();
-        for(Students s: tuwaiq.getStudents()){
-            if(s.getBootcamp().equals("Java Spring Boot")){
-                java.add(s);
-            }
-        }
-        return java;
+    public ArrayList<Students> StudentsSpringboot(){
+        return tuwaiq.getStudentsSpringboot();
     }
 
     @GetMapping("/students/frontend")
-    public ArrayList<Students> getStudentsFrontend(){
-        ArrayList<Students> frontend = new ArrayList<>();
-        for(Students s: tuwaiq.getStudents()){
-            if(s.getBootcamp().equals("Frontend Development")){
-                frontend.add(s);
-            }
-        }
-        return frontend;
+    public ArrayList<Students> StudentsFrontend(){
+        return tuwaiq.getStudentsFrontend();
     }
 
     @GetMapping("/students/python")
-    public ArrayList<Students> getStudentsPython(){
-        ArrayList<Students> python = new ArrayList<>();
-        for(Students s: tuwaiq.getStudents()){
-            if(s.getBootcamp().equals("Python for Data Science")){
-                python.add(s);
-            }
-        }
-        return python;
+    public ArrayList<Students> StudentsPython(){
+        return tuwaiq.getStudentsPython();
     }
 
     @GetMapping("/students/mobile-app-development")
-    public ArrayList<Students> getStudentsMobileAppDevelopment(){
-        ArrayList<Students> mobileAppDevelopment = new ArrayList<>();
-        for(Students s: tuwaiq.getStudents()){
-            if(s.getBootcamp().equals("Mobile App Development")){
-                mobileAppDevelopment.add(s);
-            }
-        }
-        return mobileAppDevelopment;
+    public ArrayList<Students> StudentsMobileAppDevelopment(){
+        return tuwaiq.getStudentsMobileAppDevelopment();
     }
 
     @GetMapping("/students/devOps-and-cloud")
-    public ArrayList<Students> getStudentsDevOpsAndCloud(){
-        ArrayList<Students> devOps = new ArrayList<>();
-        for(Students s: tuwaiq.getStudents()){
-            if(s.getBootcamp().equals("DevOps and Cloud")){
-                devOps.add(s);
-            }
-        }
-        return devOps;
+    public ArrayList<Students> StudentsDevOpsAndCloud(){
+        return tuwaiq.getStudentsDevOpsAndCloud();
     }
 
     @GetMapping("/students/cybersecurity")
-    public ArrayList<Students> getStudentsCybersecurity(){
-        ArrayList<Students> cybersecurity = new ArrayList<>();
-        for(Students s: tuwaiq.getStudents()){
-            if(s.getBootcamp().equals("Cybersecurity Essentials")){
-                cybersecurity.add(s);
-            }
-        }
-        return cybersecurity;
+    public ArrayList<Students> StudentsCybersecurity(){
+        return tuwaiq.getStudentsCybersecurity();
     }
 
     @GetMapping("/bootcamps/top")
-    public ArrayList<Bootcamp> getBootcampTop(){
-        ArrayList<Bootcamp> bootcamps = new ArrayList<>();
-        for(Bootcamp b: tuwaiq.getBootcamps()){
-            if(b.getBootcamp_evaluation() > 4){
-                bootcamps.add(b);
-            }
-        }
-        return bootcamps;
+    public ArrayList<Bootcamp> BootcampTop(){
+        return tuwaiq.getTopBootcamps();
     }
 }
 
