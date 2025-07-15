@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Bootcamp {
     private String bootcamp_name;
-    private int bootcamp_evaluation;
+    private double bootcamp_evaluation;
     private Instructor instructor;
     private ArrayList<Students> students;
 
-    public Bootcamp(String bootcamp_name, int bootcamp_evaluation, Instructor instructor, ArrayList<Students> students) {
+    public Bootcamp(String bootcamp_name, double bootcamp_evaluation, Instructor instructor, ArrayList<Students> students) {
         this.bootcamp_name = bootcamp_name;
         this.bootcamp_evaluation = bootcamp_evaluation;
         setInstructor(instructor);
@@ -23,7 +23,7 @@ public class Bootcamp {
         this.bootcamp_name = bootcamp_name;
     }
 
-    public int getBootcamp_evaluation() {
+    public double getBootcamp_evaluation() {
         return bootcamp_evaluation;
     }
 

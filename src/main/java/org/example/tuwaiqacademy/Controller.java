@@ -66,9 +66,9 @@ public class Controller {
         Instructor i6 = new Instructor("Rana", "rana@gmail.com");
 
         Bootcamp b1 = new Bootcamp("Java Spring Boot", 5, i1, students1);
-        Bootcamp b2 = new Bootcamp("Frontend Development", 4,  i2, students2);
+        Bootcamp b2 = new Bootcamp("Frontend Development", 4.3,  i2, students2);
         Bootcamp b3 = new Bootcamp("Python for Data Science", 3,  i3, students3);
-        Bootcamp b4 = new Bootcamp("Mobile App Development", 4,   i4, students4);
+        Bootcamp b4 = new Bootcamp("Mobile App Development", 4.7,   i4, students4);
         Bootcamp b5 = new Bootcamp("DevOps and Cloud", 3,   i5, students5);
         Bootcamp b6 = new Bootcamp("Cybersecurity Essentials", 4,   i6, students6);
 
