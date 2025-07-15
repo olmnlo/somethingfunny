@@ -56,6 +56,10 @@ public class Tuwaiq {
         return bootcamps;
     }
 
+    public void assignInstructor(Instructor instructor, Bootcamp bootcamp){
+        bootcamp.setInstructor(instructor);
+    }
+
     @Override
     public String toString() {
         return "Tuwaiq{" +
