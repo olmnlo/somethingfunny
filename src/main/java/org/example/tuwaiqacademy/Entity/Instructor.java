@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Instructor {
     private String instructor_name;
     private String email;
+    private String bootcamp_name;
 
     public Instructor(String instructor_name, String email) {
         this.instructor_name = instructor_name;
@@ -27,11 +28,20 @@ public class Instructor {
         this.email = email;
     }
 
+    public String getBootcamp_name() {
+        return bootcamp_name;
+    }
+
+    public void setBootcamp_name(String bootcamp_name) {
+        this.bootcamp_name = bootcamp_name;
+    }
+
     @Override
     public String toString() {
         return "Instructor{" +
                 "instructor_name='" + instructor_name + '\'' +
                 ", email='" + email + '\'' +
+                ", bootcamp_name='" + bootcamp_name + '\'' +
                 '}';
     }
 }

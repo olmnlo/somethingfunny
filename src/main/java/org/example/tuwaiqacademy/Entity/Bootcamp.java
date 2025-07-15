@@ -11,7 +11,7 @@ public class Bootcamp {
     public Bootcamp(String bootcamp_name, int bootcamp_evaluation, Instructor instructor, ArrayList<Students> students) {
         this.bootcamp_name = bootcamp_name;
         this.bootcamp_evaluation = bootcamp_evaluation;
-        this.instructor = instructor;
+        setInstructor(instructor);
         setStudents(students);
     }
 
@@ -36,6 +36,7 @@ public class Bootcamp {
     }
 
     public void setInstructor(Instructor instructor) {
+        instructor.setBootcamp_name(bootcamp_name);
         this.instructor = instructor;
     }
 

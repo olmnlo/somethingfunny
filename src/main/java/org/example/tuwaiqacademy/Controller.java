@@ -105,6 +105,21 @@ public class Controller {
     public Tuwaiq getAllData(){
         return tuwaiq;
     }
+
+    @GetMapping("/students")
+    public ArrayList<Students> getStudents(){
+        return tuwaiq.getStudents();
+    }
+
+    @GetMapping("/bootcamps")
+    public ArrayList<Bootcamp> getBootcamps(){
+        return tuwaiq.getBootcamps();
+    }
+
+    @GetMapping("instructors")
+    public ArrayList<Instructor> getInstructors(){
+        return tuwaiq.getInstructors();
+    }
 }
 
 
