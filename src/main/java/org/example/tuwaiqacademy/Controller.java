@@ -116,7 +116,7 @@ public class Controller {
         return tuwaiq.getBootcamps();
     }
 
-    @GetMapping("instructors")
+    @GetMapping("/instructors")
     public ArrayList<Instructor> getInstructors(){
         return tuwaiq.getInstructors();
     }
